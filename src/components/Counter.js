@@ -13,7 +13,7 @@ export default class Counter extends Component {
         this.setState({ count: this.state.count - this.state.step});
     }
     alterarStep(texto){
-        this.setState({step: parseInt(texto)})
+        this.setState({step: parseInt(texto) || 0})
     }
     render(){
         return (
