@@ -1,3 +1,6 @@
+
+      //Utilizando state
+
 /*import { Component } from 'react';
 import { Button, StyleSheet, Text, TextInput, View } from 'react-native';
 
@@ -30,8 +33,11 @@ export default class Counter extends Component {
     }
 }*/
 
+
+    //Utilizando props
+
 import React, { Component } from 'react'
-import { View, Text, Button } from 'react-native'
+import { View, Text, Button, StyleSheet} from 'react-native'
 
 export default class Counter extends Component {
 
@@ -52,22 +58,21 @@ export default class Counter extends Component {
 
   render() {
     return (
-      <View>
-        <Text>Contador</Text>
-        <Text>{this.state.contador}</Text>
-        <Button title="Incrementar" onPress={this.incrementar} />
-        <Button title="Decrementar" onPress={this.decrementar} />
+      <View style={styles.contador}>
+        <Text >Contador </Text>
+        <Text>{this.state.contador} </Text>
+        <Button color="#85EB8F" title="Incrementar" onPress={this.incrementar} />
+        <Button color="#DB473F" title="Decrementar" onPress={this.decrementar} />
       </View>
     )
   }
 }
 
-
-/*const styles = StyleSheet.create({
+  const styles = StyleSheet.create({
     contador: {
         flexDirection: 'row',
         marginBottom: 10,
-        alignItems: 'center',
+        alignItems:'center',
         }
-    }*/
-    
+    }
+  )
