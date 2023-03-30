@@ -19,8 +19,8 @@ function Card (props) {
       <Text style={{ fontSize: 20, color:'#fff'}}>{props.livro.equipe}</Text>
       <Text style={{ fontSize: 20, color:'#fff'}}>{props.livro.pontos}</Text>
       <TextInput />
-      <Button onPress={() => this.increment()} title="+"/>
-      <Button onPress={() => this.decrement()} title="-"/>
+      <Button onPress={() => this.increment()} title="Like"/>
+      <Button onPress={() => this.decrement()} title="Dislike"/>
       
     </View>
   )
