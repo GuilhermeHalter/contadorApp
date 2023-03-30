@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, Image, ScrollView, Button, TextInput, imp} from 'react-native';
+import { StyleSheet, Text, View, Image, ScrollView, Button, TextInput} from 'react-native';
 
 function Card (props) {
 
